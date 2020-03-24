@@ -1,0 +1,9 @@
+Node commands:
+
+npm init -y [create a node project]
+npm install express [install express framework]
+node index.js [start the application]
+
+React commands:
+npx create-react-app <projectname> [create a React app using npx]
+npm start [start the React app]
