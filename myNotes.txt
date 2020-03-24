@@ -1,9 +1,24 @@
 Node commands:
-
 npm init -y [create a node project]
 npm install express [install express framework]
 node index.js [start the application]
+npm install knex [query builder]
+npm install sqlite3 [an intern database]
+npx knex init [create a file with the database configuration]
+
+npm install nodemon -D [used in development profile to auto-restart the app when you save something]*
+* after install nodemon, go to package.json and replace the scripts content to this:
+"scripts": {
+    "start": "nodemon src/index.js"
+  }
 
 React commands:
 npx create-react-app <projectname> [create a React app using npx]
 npm start [start the React app]
+
+=========================================
+Query params: named params sent in route after '?'. (Filters, pages...) Example: /users?name=Alan&age=29
+Route params: params used to identify resources. Example: users/1 (1 represents the user id) 
+Request body: it's the body of the request. Used to create/update a resource.
+
+Knex.js - Query builder, used to build queries to access a database.
