@@ -5,6 +5,10 @@ node index.js [start the application]
 npm install knex [query builder]
 npm install sqlite3 [an intern database]
 npx knex init [create a file with the database configuration]
+npx knex migrate:make <migration name> [create a migration on database]
+npx knex migrate:status [show all migrations executed]
+npx knex migrate:rollback [execute the rollback from the last migration executed]
+npm install cors [allows restricted resources on a web page to be requested from another domain outside the domain]
 
 npm install nodemon -D [used in development profile to auto-restart the app when you save something]*
 * after install nodemon, go to package.json and replace the scripts content to this:
@@ -22,3 +26,12 @@ Route params: params used to identify resources. Example: users/1 (1 represents 
 Request body: it's the body of the request. Used to create/update a resource.
 
 Knex.js - Query builder, used to build queries to access a database.
+
+Migrations:
+Need to set the directory on knexfile.js:
+migrations: {
+      directory: './src/database/migrations'
+    }
+
+up - Create all the structure and data of the migration
+down - Works like a rollback and remove all the things that you made.
