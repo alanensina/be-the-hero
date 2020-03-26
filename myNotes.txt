@@ -21,6 +21,9 @@ npx create-react-app <projectname> [create a React app using npx]
 npm start [start the React app]
 
 =========================================
+Notes:
+
+Node.js:
 Query params: named params sent in route after '?'. (Filters, pages...) Example: /users?name=Alan&age=29
 Route params: params used to identify resources. Example: users/1 (1 represents the user id) 
 Request body: it's the body of the request. Used to create/update a resource.
@@ -35,3 +38,7 @@ migrations: {
 
 up - Create all the structure and data of the migration
 down - Works like a rollback and remove all the things that you made.
+
+React:
+Component - It's a function that returns a HTML
+JSX - Javascript XML
