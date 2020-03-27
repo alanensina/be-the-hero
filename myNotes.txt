@@ -19,6 +19,8 @@ npm install nodemon -D [used in development profile to auto-restart the app when
 React commands:
 npx create-react-app <projectname> [create a React app using npx]
 npm start [start the React app]
+npm install react-icons [icons package]
+npm install react-router-dom [router package]
 
 =========================================
 Notes:
